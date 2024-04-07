@@ -9,6 +9,7 @@ import com.zerobase.reservation.token.domain.UserVo;
 import com.zerobase.reservation.token.util.Aes256Util;
 import io.jsonwebtoken.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -21,7 +22,8 @@ import java.util.Objects;
 @Component
 @RequiredArgsConstructor
 public class JwtAuthProvider {
-    private static final String secretKey = "SecretKey";
+    @Value("${spring.jwt.secret}")
+    private String secretKey;
     // 토큰 유효 기간 (하루)
     private static final Long tokenValidTime = 1000L * 60 * 60 * 24;
 
