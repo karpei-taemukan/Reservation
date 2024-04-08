@@ -16,6 +16,11 @@
 - swagger를 활용해 보다 더 쉽게 API를 볼 수 있게 했습니다
 - JPA를 활용한 CRUD에 대해 다뤘습니다
 - feign을 활용하여 mailgun을 호출해, 이메일에 인증메일을 받을 수 있게 했습니다
+
+# 비즈니스 구현 모델 사용도
+
+![Untitled](https://github.com/karpei-taemukan/Reservation/assets/91212680/200ad2c7-ba92-4b1c-bde6-cafc7c299c3a)
+
  
 # 주의사항
 :triangular_flag_on_post: 만약 한글로 json 요청을 준다면 DB 콘솔창에 다음과 같이 한글을 인식할 수 있도록 utf8 설정을 합니다 <br>
