@@ -12,7 +12,7 @@
 # 프로젝트 설명 :heavy_check_mark:
 - 스프링 부트를 이용한 API 입니다
 - JWT 토큰과 Spring-security를 이용하여 인증과 권한에 대해 다뤘습니다
-- JWT 토큰은 누구나 디코딩이 가능하기때문에 
+- JWT 토큰은 누구나 디코딩이 가능하기때문에 주요 정보(password, name)은 한번 더 Aes256 암호화를 거쳤습니다
 - swagger를 활용해 보다 더 쉽게 API를 볼 수 있게 했습니다
 - JPA를 활용한 CRUD에 대해 다뤘습니다
 - feign을 활용하여 mailgun을 호출해, 이메일에 인증메일을 받을 수 있게 했습니다
